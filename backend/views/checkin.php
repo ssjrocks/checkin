@@ -11,6 +11,9 @@
             
             document.getElementById('dropoff_details_container').style.display = visitReason === 'dropoff' || visitReason === 'both' ? 'block' : 'none';
             document.getElementById('pickup_details_container').style.display = visitReason === 'pickup' || visitReason === 'both' ? 'block' : 'none';
+
+            document.getElementById('dropoff_priority_container').style.display = visitReason === 'dropoff' || visitReason === 'both' ? 'block' : 'none';
+            document.getElementById('pickup_priority_container').style.display = visitReason === 'pickup' || visitReason === 'both' ? 'block' : 'none';
         }
 
         function togglePriorityDetails() {
@@ -61,12 +64,6 @@
             <div>
                 <input type="checkbox" id="rear_loading" name="special_info[]" value="rear_loading"> <label for="rear_loading">Fridge Truck/Pantek for Rear Loading</label>
             </div>
-            <div>
-                <input type="checkbox" id="dropoff_priority" name="priority[]" value="dropoff" onclick="togglePriorityDetails()"> <label for="dropoff_priority">Dropoff Priority</label>
-            </div>
-            <div>
-                <input type="checkbox" id="pickup_priority" name="priority[]" value="pickup" onclick="togglePriorityDetails()"> <label for="pickup_priority">Pickup Priority</label>
-            </div>
 
             <div id="dropoff_details_container" style="display: none;">
                 <label for="dropoff_details">Dropoff Details:</label>
@@ -78,18 +75,18 @@
                 <textarea id="pickup_details" name="pickup_details"></textarea>
             </div>
 
+            <div id="dropoff_priority_container" style="display: none;">
+                <input type="checkbox" id="dropoff_priority" name="priority[]" value="dropoff" onclick="togglePriorityDetails()"> <label for="dropoff_priority">Dropoff Priority</label>
+            </div>
+
+            <div id="pickup_priority_container" style="display: none;">
+                <input type="checkbox" id="pickup_priority" name="priority[]" value="pickup" onclick="togglePriorityDetails()"> <label for="pickup_priority">Pickup Priority</label>
+            </div>
+
             <div id="dropoff_priority_details_container" style="display: none;">
                 <label for="dropoff_priority_details">Dropoff Priority Details:</label>
                 <textarea id="dropoff_priority_details" name="dropoff_priority_details"></textarea>
             </div>
 
             <div id="pickup_priority_details_container" style="display: none;">
-                <label for="pickup_priority_details">Pickup Priority Details:</label>
-                <textarea id="pickup_priority_details" name="pickup_priority_details"></textarea>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</body>
-</html>
+                <label
