@@ -14,6 +14,8 @@
                 <li><a href="backend/views/checkin.php">Adhoc Visit Check-in</a></li>
                 <li><a href="backend/views/frequent_checkin.php">Frequent Visitor Check-in</a></li>
                 <li><a href="backend/views/manager.php">Management Dashboard</a></li>
+                <li><a href="backend/views/operator.php">Forklift Operator Dashboard</a></li>
+                
             </ul>
         </nav>
     </div>
