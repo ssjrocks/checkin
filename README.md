@@ -8,3 +8,6 @@ and a supervisor created ticket for random adhoc jobs to be performed around the
 forklift drivers can login and see a list of tickets with information about age priority and vehicle requirements such as rear loading required.
 they can the select a ticket to work on, which will mark it as in progress and show the user as attached to the in progress ticket.
 supervisors and administration staff will be able to log in and view current tickets and statistics regarding crossdock performance and forklift operator kpi's
+
+
+i am using chatgpt to try and help me create this (my small php and sql coding history comes from a simple pocsag message database system i made like 15 years ago lol)
