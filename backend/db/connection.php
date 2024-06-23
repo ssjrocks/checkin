@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "your_username";
-$password = "your_password";
+$username = "root";
+$password = "";
 $dbname = "vehicle_checkin";
 
 // Create connection
